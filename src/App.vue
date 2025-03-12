@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <h2>555555555</h2>
     <Navbar />
     <HomeCarousel />
     <ProductCategories></ProductCategories>
     <HotProducts></HotProducts>
+    <FlashSale></FlashSale>
     <router-view :cartItems="cartItems" @add-to-cart="addToCart" @remove-from-cart="removeFromCart" />
   </div>
 </template>
@@ -16,7 +16,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.js'
 import Navbar from './components/Navbar.vue';
 import ProductCategories from './components/ProductCategories.vue';
 import HotProducts from './components/HotProducts.vue';
-// import FlashSale from './components/FlashSale.vue';
+import FlashSale from './components/FlashSale.vue';
 
 export default {
   name: 'App',
@@ -25,7 +25,7 @@ export default {
     HomeCarousel,
     ProductCategories,
     HotProducts,
-    // FlashSale
+    FlashSale
   },
   data() {
     return {
